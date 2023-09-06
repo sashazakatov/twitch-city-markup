@@ -3,7 +3,7 @@
     --first-company-color: #8dfe54;  
     --second-company-color: #4223ac;
     --backound-color: #121212;
-
+    --text-color: #fff;
     /* animation */
     --animation-time: 250ms;
 
@@ -29,6 +29,7 @@ body {
     font-family: 'Kanit', 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
+    background-color: var(--backound-color);
 }
 
 img {
