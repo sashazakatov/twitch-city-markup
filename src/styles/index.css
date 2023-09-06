@@ -1,0 +1,70 @@
+:root {
+    /* colors */
+    --first-company-color: #8dfe54;  
+    --second-company-color: #4223ac;
+    --backound-color: #121212;
+
+    /* animation */
+    --animation-time: 250ms;
+
+    /* endpoints */
+    --moduil-size: 480px;
+    --tablet-size: 768px;
+    --desctop-size: 1200px;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('/src/fonts/Kanit-Medium.woff2') format('woff2'),
+        url('/src/fonts/Kanit-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('/src/fonts/Oswald-Medium.woff2') format('woff2'),
+         url('/src/fonts/Oswald-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Kanit', 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.is-hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+
+}
