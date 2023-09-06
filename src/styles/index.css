@@ -17,14 +17,14 @@
 
 @font-face {
     font-family: 'Kanit';
-    src: url('/src/fonts/Kanit-Medium.woff2') format('woff2'),
-        url('/src/fonts/Kanit-Regular.woff2') format('woff2');
+    src: url('./src/fonts/Kanit-Medium.woff2') format('woff2'),
+        url('./src/fonts/Kanit-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Oswald';
-    src: url('/src/fonts/Oswald-Medium.woff2') format('woff2'),
-         url('/src/fonts/Oswald-Regular.woff2') format('woff2');
+    src: url('./src/fonts/Oswald-Medium.woff2') format('woff2'),
+         url('./src/fonts/Oswald-Regular.woff2') format('woff2');
 }
 
 body {
