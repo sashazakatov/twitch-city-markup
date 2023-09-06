@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>twich site</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -11,6 +11,47 @@
     <link rel="stylesheet" href="/src/styles/index.css">
 </head>
 <body>
-    
+    <header class="header">
+      <div class="container">
+        <div class="header__flex">
+          <nav class="header__nav">
+            <a href="./index.html" title="home page">
+              <img class="logo" src="./src/images/logo.png" alt="logo">
+            </a>
+            <button class="menu-button js-open-menu" type="button">
+              <svg width="40" height="40">
+                <use class="burger-menu" href="./src/images/icons.svg#menu-icon"></use>
+              </svg>
+            </button>
+            <ul class="navigation">
+              <li class="navigation__item"><a href="#" class="header__link">Streamers</a></li>
+              <li class="navigation__item"><a href="#" class="header__link">Careers</a></li>
+              <li class="navigation__item"><a href="#" class="header__link">Sponsorships</a></li>
+              <li class="navigation__item"><a href="#" class="header__link">Merch</a></li>
+            </ul>
+          </nav>
+          <div><a class="header_contact" href="">contact us</a></div>
+        </div>
+      </div>
+    </header>
+      <!-- mobile-menu -->
+      <div class="mobile-menu js-menu-container">
+        <button class="menu-button mobile-menu__button-close js-close-menu">
+          close
+        </button>
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#" class="navigation__link">Streamers</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Careers</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Sponsorships</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Merch</a></li>
+        </ul>
+      </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/mobile-menu.js"></script>
 </body>
 </html>
