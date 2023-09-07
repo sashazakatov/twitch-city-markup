@@ -14,10 +14,10 @@
     <header class="header" id="header">
       <div class="container">
         <div class="header__flex">
+          <a href="./index.html" title="home page">
+            <img class="logo" src="./src/images/logo.png" alt="logo">
+          </a>
           <nav class="header__nav">
-            <a href="./index.html" title="home page">
-              <img class="logo" src="./src/images/logo.png" alt="logo">
-            </a>
             <button class="menu-button js-open-menu" type="button">
               <svg width="40" height="40">
                 <use class="burger-menu" href="./src/images/icons.svg#menu-icon"></use>
@@ -30,16 +30,32 @@
               <li class="navigation__item"><a href="./src/pages/merch.html" class="header__link">Merch</a></li>
             </ul>
           </nav>
-          <div><a class="header_contact" href="">contact us</a></div>
+          <div><a class="header_contact" href="#form">contact us</a></div>
         </div>
       </div>
     </header>
     <main>
       <section class="form">
-        <div class="container">
-          <svg width="40" height="40">
-            <use class="burger-menu" href="./src/images/icons.svg#menu-icon"></use>
-          </svg>
+        <div class="container" id="form">
+          <h1>Form</h1>
+          <form>
+            <label>
+              first name
+              <input type="text" name="first_name">
+            </label>
+            <label>
+              last name
+              <input type="text" name="last_name">
+            </label>
+            <label>
+              email
+              <input type="email" name="email">
+            </label>
+            <label>
+              how can we help
+              <textarea name="help" cols="30" rows="10"></textarea>
+            </label>
+          </form>
         </div>
       </section>
     </main>
