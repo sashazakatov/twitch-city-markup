@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__flex">
           <nav class="header__nav">
@@ -46,12 +46,31 @@
           <li class="navigation__item"><a href="./src/pages/merch.html" class="header__link">Merch</a></li>
         </ul>
       </div>
+      <main></main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__flex">
+            <a href="#header" title="home page">
+              <img class="logo" src="./src/images/logo.png" alt="logo">
+            </a>
+            <ul class="footer__navigation">
+              <li><a href="./src/pages/streamers.html" class="footer__link">Streamers</a></li>
+              <li><a href="./src/pages/careers.html" class="footer__link">Careers</a></li>
+              <li><a href="./src/pages/sponsorships.html" class="footer__link">Sponsorships</a></li>
+              <li><a href="./src/pages/merch.html" class="footer__link">Merch</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./src/js/mobile-menu.js"></script>
+    <script
+      defer
+      src="./src/js/mobile-menu.js"
+    ></script>
 </body>
 </html>
