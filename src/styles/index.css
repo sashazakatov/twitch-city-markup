@@ -127,12 +127,12 @@ ul {
 
 .burger-menu{
     fill: #fff;
-    transition-property: fill;
-    transition-duration: var(--animation-time);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .menu-button:hover .burger-menu,
-.menu-button:hover .burger-menu{
+.menu-button:focus .burger-menu{
     fill: var(--first-company-color);
 }
 @media screen and (max-width: 767px) {
@@ -156,7 +156,6 @@ ul {
     .header__nav {
         display: flex;
         justify-content: flex-end;
-        /* align-items: center; */
         flex-grow: 4;
     }
 }
@@ -244,7 +243,9 @@ ul {
 
     flex-grow: 1;
 }
-.header_contact:hover{
+.header_contact:hover,
+.header_contact:focus,
+.header_contact:active {
     background-color: var(--second-company-color);
 }
 @media screen and (max-width: 768px) {
@@ -301,12 +302,14 @@ ul {
 
     background-color: #fff;
 
-    transition-property: background-color;
+    /* transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.menu-container .menu-toggle:hover{
+.menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
+.menu-container .menu-toggle:active {
     background-color: var(--first-company-color);
 }
 
