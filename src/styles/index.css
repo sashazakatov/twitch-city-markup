@@ -2,7 +2,7 @@
     /* colors */
     --first-company-color: #8dfe54;  
     --second-company-color: #4223ac;
-    --backound-color: #121212;
+    --backound-color: #252525;
     --text-color: #fff;
     /* animation */
     --animation-time: 250ms;
@@ -16,19 +16,32 @@
 }
 
 @font-face {
-    font-family: 'Kanit';
-    src: url('./src/fonts/Kanit-Medium.woff2') format('woff2'),
-        url('./src/fonts/Kanit-Regular.woff2') format('woff2');
+    font-family: 'Tomorrow';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Tomorrow-Regular.woff2'),
+    url('../fonts/Tomorrow-Regular.woff');
 }
-
 @font-face {
-    font-family: 'Oswald';
-    src: url('./src/fonts/Oswald-Medium.woff2') format('woff2'),
-         url('./src/fonts/Oswald-Regular.woff2') format('woff2');
+    font-family: 'Tomorrow';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Tomorrow-Medium.woff2'),
+        url('../fonts/Tomorrow-Medium.woff');
+}
+@font-face {
+    font-family: 'Tomorrow';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Tomorrow-SemiBold.woff2'),
+        url('../fonts/Tomorrow-SemiBold.woff');
 }
 
 body {
-    font-family: 'Kanit', 'Roboto', sans-serif;
+    font-family: 'Tomorrow', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--backound-color);
@@ -220,7 +233,7 @@ ul {
     text-transform: uppercase;
     border: 1px solid var(--second-company-color);
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 19px;
 
     padding: 6px 12px;
@@ -240,25 +253,19 @@ ul {
     }
 }
 /* navigation */
-.navigation{
+.header__navigation{
     display: none;
 }
 @media screen and (min-width: 768px) {
-    .navigation{
+    .header__navigation{
         display: flex;
         gap: 15px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .navigation{
+    .header__navigation{
         gap: 30px;
     }
-}
-.navigation__item{
-
-}
-.navigation__link{
-
 }
 /* mobile-menu */
 .menu-container {
