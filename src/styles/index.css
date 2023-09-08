@@ -363,7 +363,8 @@ ul {
 }
 
 .mobile-contact:hover,
-.mobile-contact:focus {
+.mobile-contact:focus,
+.mobile-contact:active {
     color: var(--backound-color);
     background-color: var(--first-company-color);
 }
@@ -411,7 +412,8 @@ ul {
 }
 
 .footer__link:hover,
-.footer__link:focus {
+.footer__link:focus,
+.footer__link:active {
     color: var(--backound-color);
     fill: currentColor;
     background-color: var(--first-company-color);
