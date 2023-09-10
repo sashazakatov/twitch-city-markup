@@ -413,7 +413,6 @@ ul {
     border: 1px solid var(--first-company-color);
     padding: 6px 12px;
     text-align: center;
-    transform: skew(160deg);
 }
 
 .footer__link:hover,
