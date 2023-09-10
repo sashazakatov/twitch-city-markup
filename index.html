@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>twich site</title>
+    <link rel="icon" href="./src/images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,26 +41,37 @@
       </div>
     </header>
     <main>
-      <section class="form">
+      <section class="form__container">
         <div class="container" id="form">
-          <h1>Form</h1>
-          <form>
-            <label>
-              first name
-              <input type="text" name="first_name">
+          <form class="form">
+            <div class="form__name-user">
+              <label class="form__label">
+                <samp class="form__span">first name</samp>
+                <input type="text" name="first_name" class="form__input">
+                <svg height="18" width="18" class="form__icon">
+                  <use href="./src/images/icons.svg#person-icon"></use>
+                </svg>
+              </label>
+              <label class="form__label">
+                <span class="form__span">last name</span>
+                <input type="text" name="last_name" class="form__input">
+                <svg height="18" width="18" class="form__icon">
+                  <use href="./src/images/icons.svg#person-icon"></use>
+                </svg>
+              </label>
+            </div>
+            <label class="form__label">
+              <samp class="form__span">email</samp>
+              <input type="email" name="email" class="form__input">
+              <svg height="18" width="18" class="form__icon">
+                <use href="./src/images/icons.svg#email-icon"></use>
+              </svg>
             </label>
-            <label>
-              last name
-              <input type="text" name="last_name">
+            <label class="form__label">
+              <span class="form__span">how can we help?</span>
+              <textarea name="help" cols="30" rows="10" class="form__comment"></textarea>
             </label>
-            <label>
-              email
-              <input type="email" name="email">
-            </label>
-            <label>
-              how can we help
-              <textarea name="help" cols="30" rows="10"></textarea>
-            </label>
+            <button type="submit" class="form__button">submit</button>
           </form>
         </div>
       </section>

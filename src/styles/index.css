@@ -4,6 +4,9 @@
     --second-company-color: #4223ac;
     --backound-color: #252525;
     --text-color: #fff;
+    --input-border-color: #b9bdce;
+    --input-text-color: #b9bdce;
+
     /* animation */
     --animation-time: 250ms;
 
@@ -38,6 +41,15 @@
     font-weight: 600;
     src: url('../fonts/Tomorrow-SemiBold.woff2'),
         url('../fonts/Tomorrow-SemiBold.woff');
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0 0;
 }
 
 body {
@@ -127,9 +139,6 @@ ul {
 
 .burger-menu{
     fill: #fff;
-    /* transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .menu-button:hover .burger-menu,
 .menu-button:focus .burger-menu{
@@ -301,10 +310,6 @@ ul {
     border: none;
 
     background-color: #fff;
-
-    /* transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .menu-container .menu-toggle:hover,
@@ -417,4 +422,216 @@ ul {
     color: var(--backound-color);
     fill: currentColor;
     background-color: var(--first-company-color);
+}
+
+/* form */
+.form__container {
+    margin: 30px 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        width: 600px;
+    }
+}
+
+.form__label {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.16;
+    width: 100%;
+    letter-spacing: 0.01em;
+
+    cursor: pointer;
+}
+.form__name-user {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.form__span {
+    display: block;
+    margin-bottom: 4px;
+}
+.form__input {
+    padding: 11px 11px 11px 32px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--backound-color);
+    outline: none;
+    box-sizing: border-box;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:hover,
+.form__input:active {
+    border: 1px solid var(--second-company-color);
+    background-color: var(--backound-color);
+}
+
+.form__icon {
+    position: absolute;
+    left: 12px;
+    top: 28px;
+    fill: var(--input-border-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:hover + .form__icon,
+.form__input:active + .form__icon {
+    fill: var(--second-company-color);
+}
+
+.form__comment {
+    resize: none;
+    height: 120px;
+    width: 100%;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--backound-color);
+    outline: none;
+    padding: 8px;
+    color: #fff;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__comment:hover,
+.form__comment:active {
+    border: 1px solid var(--second-company-color);
+    background-color: var(--backound-color);
+}
+
+.form__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+.form__button {
+    display: block;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--backound-color);
+
+    transition-property: border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__button:hover,
+.form__button:active {
+    border: 1px solid var(--second-company-color);
+    background-color: var(--second-company-color);
+}
+
+/* modal */
+.modal {
+    position: absolute;
+
+    transition-property: border-color, visibility;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    width: 528px;
+    height: 581px;
+
+    background-color: var(--background-color);
+}
+
+/* @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+} */
+
+.modal__form {
+    margin: 40px;
+}
+
+.modal__title {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.15;
+}
+
+.modal__field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal__label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal__input {
+    cursor: pointer;
+    transition-property: border-color;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+}
+
+.modal__input:hover,
+.modal__input:focus {
+    border-color: var(--company-color);
+}
+
+.modal__icon {
+    transition-property: fill;
+    transition-duration: var(--animation-time);
+    transition-timing-function: var(--bezier-function);
+
+    position: absolute;
+    left: 12px;
+    top: 28px;
+
+    cursor: pointer;
+}
+
+.modal__link {
+    color: var(--company-color);
+    cursor: pointer;
+}
+
+.modal__buttom {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 200px;
+    height: 50px;
+}
+
+.modal__input:hover~.modal__icon,
+.modal__input:focus~.modal__icon {
+    fill: var(--company-color);
 }
