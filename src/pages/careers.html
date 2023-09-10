@@ -3,9 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>careers</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&family=Oswald:wght@400;500&family=Tomorrow:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <h1>careers</h1>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__flex">
+                <a href="../../index.html" title="home page">
+                    <img class="logo" src="../images/logo.png" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <button class="menu-button js-open-menu" type="button">
+                        <svg width="40" height="40">
+                            <use class="burger-menu" href="../images/icons.svg#menu-icon"></use>
+                        </svg>
+                    </button>
+                    <ul class="header__navigation">
+                        <li><a href="./src/pages/streamers.html" class="header__link">Streamers</a></li>
+                        <li><a href="./src/pages/careers.html" class="header__link header__link--active">Careers</a></li>
+                        <li><a href="./src/pages/sponsorships.html" class="header__link">Sponsorships</a></li>
+                        <li><a href="./src/pages/merch.html" class="header__link">Merch</a></li>
+                    </ul>
+                </nav>
+                <div><button type="button" data-modal-open class="header_contact">contact us</button></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <span>contant</span>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <a href="../../index.html" title="home page">
+                    <img class="logo" src="../images/logo.png" alt="logo">
+                </a>
+                <ul class="footer__navigation">
+                    <li><a href="./src/pages/streamers.html" class="footer__link">Streamers</a></li>
+                    <li><a href="./src/pages/careers.html" class="footer__link">Careers</a></li>
+                    <li><a href="./src/pages/sponsorships.html" class="footer__link">Sponsorships</a></li>
+                    <li><a href="./src/pages/merch.html" class="footer__link">Merch</a></li>
+                </ul>
+            </div>
+    </footer>
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="24" height="24">
+                <use href="../images/icons.svg#close-icon"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li><a href="./index.html" class="link">Home</a></li>
+                <li><a href="./src/pages/streamers.html" class="link">Streamers</a></li>
+                <li><a href="./src/pages/careers.html" class="link">Careers</a></li>
+                <li><a href="./src/pages/sponsorships.html" class="link">Sponsorships</a></li>
+                <li><a href="./src/pages/merch.html" class="link">Merch</a></li>
+            </ul>
+            <button type="button" data-modal-open class="mobile-contact" href="./index.html#form">contact us</a>
+        </nav>
+    </div>
+    <!-- modal-menu -->
+    <div class="backdoor is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal__button-close js-close-menu" data-modal-close>
+                <svg width="24" height="24">
+                    <use href="../images/icons.svg#close-icon"></use>
+                </svg>
+            </button>
+            <form class="form modal__form">
+                <div class="form__name-user">
+                    <label class="form__label">
+                        <samp class="form__span">first name</samp>
+                        <input type="text" name="first_name" class="form__input">
+                        <svg height="18" width="18" class="form__icon">
+                            <use href="../images/icons.svg#person-icon"></use>
+                        </svg>
+                    </label>
+                    <label class="form__label">
+                        <span class="form__span">last name</span>
+                        <input type="text" name="last_name" class="form__input">
+                        <svg height="18" width="18" class="form__icon">
+                            <use href="../images/icons.svg#person-icon"></use>
+                        </svg>
+                    </label>
+                </div>
+                <label class="form__label">
+                    <samp class="form__span">email</samp>
+                    <input type="email" name="email" class="form__input">
+                    <svg height="18" width="18" class="form__icon">
+                        <use href="../images/icons.svg#email-icon"></use>
+                    </svg>
+                </label>
+                <label class="form__label">
+                    <span class="form__span">how can we help?</span>
+                    <textarea name="help" cols="30" rows="10" class="form__comment"></textarea>
+                </label>
+                <button type="submit" class="form__button">submit</button>
+            </form>
+        </div>
+    </div>
+    <script 
+        defer 
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+    ></script>
+    <script 
+        defer 
+        src="../js/mobile-menu.js"
+    ></script>
+    <script 
+        defer 
+        src="../js/modal.js"
+    ></script>
 </body>
 </html>
