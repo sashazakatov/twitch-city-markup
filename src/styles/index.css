@@ -325,6 +325,7 @@ ul {
     margin: 0;
     margin-top: 48px;
     list-style: none;
+    
 }
 
 .mobile-menu{
@@ -333,6 +334,8 @@ ul {
     justify-content: flex-start;
     gap: 48px;
     width: 220px;
+
+    margin: auto;
 }
 
 .mobile-menu__list .link {
@@ -346,6 +349,7 @@ ul {
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: skew(160deg);
 }
 
 .mobile-menu__list .link:hover,
@@ -364,6 +368,7 @@ ul {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: skew(160deg);
 }
 
 .mobile-contact:hover,
@@ -421,6 +426,12 @@ ul {
     color: var(--backound-color);
     fill: currentColor;
     background-color: var(--first-company-color);
+}
+
+@media screen and (min-width: 768px) {
+    .footer__link {
+        transform: skew(160deg);
+    }
 }
 
 /* form */
