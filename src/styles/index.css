@@ -153,9 +153,6 @@ ul {
 }
 
 /* header */
-.header{
-
-}
 .header__flex{
     display: flex;
     align-items: center;
