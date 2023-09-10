@@ -102,7 +102,7 @@ ul {
 .container {
     margin: 0px auto;
     padding: 0px 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 @media screen and (min-width: 480px) {
@@ -238,18 +238,17 @@ ul {
     content: '';
 }
 .header_contact {
+    display: flex;
     text-transform: uppercase;
     border: 1px solid var(--second-company-color);
+    transform: skew(160deg);
     color: #fff;
     font-weight: 600;
     font-size: 19px;
-
     padding: 6px 12px;
-
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     flex-grow: 1;
 }
 .header_contact:hover,
@@ -414,6 +413,7 @@ ul {
     border: 1px solid var(--first-company-color);
     padding: 6px 12px;
     text-align: center;
+    transform: skew(160deg);
 }
 
 .footer__link:hover,
