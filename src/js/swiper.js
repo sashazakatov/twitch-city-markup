@@ -1,15 +1,15 @@
 const swiper = new Swiper('.swiper', {
-  // Optional parameters  
-  loop: true,
+  slidesPerView: 3,
   centeredSlides: true,
-  FollowFinger: false,
-  
+  spaceBetween: 15,
+  initialSlide: 1,
   autoplay: {
-   delay: 5000,
+   delay: 3000,
   },
-  
-
-  // Navigation arrows
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
