@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
 <body>
@@ -41,6 +42,26 @@
       </div>
     </header>
     <main>
+      <section class="slider">
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://w.forfun.com/fetch/0e/0e26b1b65946ee36fac9605ae67e4ac8.jpeg" alt="dog">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg" alt="dog">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://klike.net/uploads/posts/2019-06/medium/1559799916_2.jpg" alt="dog">
+              </div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+      </section>
       <section class="form__container">
         <div class="container">
           <form class="form">
@@ -114,9 +135,8 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script
-      defer
-      src="./src/js/mobile-menu.js"
-    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./src/js/mobile-menu.js"></script>
+    <script defer src="./src/js/swiper.js"></script>
 </body>
 </html>
