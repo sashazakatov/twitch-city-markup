@@ -99,6 +99,19 @@ ul {
     margin: -1px;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--first-company-color);
+    /* Цвет ползунка */
+}
+
 .container {
     margin: 0px auto;
     padding: 0px 15px;
