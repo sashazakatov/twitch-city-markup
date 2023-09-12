@@ -115,7 +115,6 @@ ul {
 .container {
     margin: 0px auto;
     padding: 0px 15px;
-    /* outline: 1px solid red; */
     max-width: 100%;
 }
 
@@ -134,7 +133,6 @@ ul {
 @media screen and (min-width: 1200px) {
     .container {
         width: 100%;
-        /* width: 1200px; */
     }
 }
 
