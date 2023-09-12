@@ -421,9 +421,6 @@ ul {
     height: 581px;
 }
 
-
-
-
 .modal__form {
     margin: 40px;
 }
@@ -547,7 +544,6 @@ ul {
     padding: 48px;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
 }
 
 @media screen and (min-width: 768px) {
