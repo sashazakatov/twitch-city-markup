@@ -167,7 +167,10 @@ ul {
 
 /* header */
 .header {
-    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .header__flex{
     display: flex;
@@ -533,7 +536,7 @@ ul {
 
 /* form */
 .form__container {
-    margin: 30px 0px;
+    margin-bottom: 30px;
 }
 
 .form {
@@ -652,4 +655,9 @@ ul {
 .form__button:focus {
     border: 1px solid var(--second-company-color);
     background-color: var(--second-company-color);
+}
+
+/* main */
+.main {
+    margin-top: 145px;
 }
