@@ -653,37 +653,3 @@ ul {
     border: 1px solid var(--second-company-color);
     background-color: var(--second-company-color);
 }
-
-/* slider */
-
-.slider {
-    padding: 30px 0px;
-}
-
-.swiper-button-next {
-    color: var(--first-company-color);
-}
-
-.swiper-button-prev {
-    color: var(--first-company-color);
-}
-
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-}
-
-.swiper__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border: 1px solid red;
-    border-radius: 4px;
-}
-
-/* @media screen and (min-width: 768px) {
-    .swiper__card {
-        width: 286;
-    }
-} */
