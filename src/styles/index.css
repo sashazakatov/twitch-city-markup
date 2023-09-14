@@ -489,17 +489,19 @@ ul {
 }
 .footer__navigation{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     margin: 0 auto;
     margin-top: 48px;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
     .footer__navigation{
         display: flex;
         justify-content: space-evenly;
+        flex-direction: row;
     }
 }
 
@@ -518,6 +520,7 @@ ul {
     border: 1px solid var(--first-company-color);
     padding: 6px 12px;
     text-align: center;
+    width: 150px;
 }
 
 .footer__link:hover,
