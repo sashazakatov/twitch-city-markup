@@ -452,7 +452,7 @@ ul {
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 425px;
+    width: 420px;
     height: 609px;
   }
 }
