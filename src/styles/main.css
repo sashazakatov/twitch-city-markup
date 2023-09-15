@@ -138,6 +138,7 @@ ul {
 
 .header {
   position: fixed;
+  padding: 5px 0px;
   top: 0;
   left: 0;
   width: 100%;
@@ -742,7 +743,7 @@ ul {
 }
 
 .main {
-  margin-top: 110px;
+  margin-top: 120px;
 }
 
 .hero {
@@ -750,7 +751,8 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 75px 0;
+  padding: 102px 0;
+  margin-bottom: 30px;
   background-color: #2F303A;
 }
 .hero__row {
