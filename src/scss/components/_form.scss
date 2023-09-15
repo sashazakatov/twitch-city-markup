@@ -10,8 +10,15 @@
     margin-left: auto;
     margin-right: auto;
 
+
     &__container {
         margin-bottom: 30px;
+    }
+
+    &__div {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
     }
 
     &__label {

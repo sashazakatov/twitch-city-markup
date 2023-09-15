@@ -447,6 +447,14 @@ ul {
   z-index: 3;
   max-width: 450px;
   height: 581px;
+  width: 528px;
+  height: 581px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 425px;
+    height: 609px;
+  }
 }
 .modal__form {
   margin: 40px;
@@ -597,6 +605,11 @@ ul {
 }
 .form__container {
   margin-bottom: 30px;
+}
+.form__div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
 }
 .form__label {
   position: relative;
