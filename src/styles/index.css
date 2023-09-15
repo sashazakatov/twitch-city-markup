@@ -670,7 +670,7 @@ ul {
 /* hero */
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image.jpg");
+    background: linear-gradient(180deg, rgba(49, 49, 49, 0.2) 94.27%, var(--backound-color) 100%), linear-gradient(89.9deg, var(--backound-color) 0.09%, rgba(49, 49, 49, 0.2) 50%), url("../images/hero-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
