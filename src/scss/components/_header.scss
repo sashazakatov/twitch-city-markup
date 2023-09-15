@@ -4,6 +4,7 @@
     left: 0;
     width: 100%;
     background-color: var(--backound-color);
+    z-index: 2;
 
     &__container {
         @media screen and (min-width: 1200px) {
