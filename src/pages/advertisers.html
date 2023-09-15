@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertisers</title>
-    <link rel="icon" href="../images/logo.png" type="image/png">
+    <title>twich site</title>
+    <link rel="icon" href="./src/images/logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400;1,500&family=Oswald:wght@400;500&family=Tomorrow:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles/main.min.css">
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="header__flex">
                 <a href="../../index.html" title="home page">
                     <img class="logo" src="../images/logo.png" alt="logo">
                 </a>
                 <nav class="header__nav">
-                    <button class="menu-button js-open-menu" type="button">
+                    <button class="mobile-menu__button js-open-menu" type="button">
                         <svg width="40" height="40">
-                            <use class="burger-menu" href="../images/icons.svg#menu-icon"></use>
+                            <use class="mobile-menu__burger" href="../images/icons.svg#menu-icon"></use>
                         </svg>
                     </button>
                     <ul class="header__navigation">
@@ -32,7 +34,7 @@
                         <li><a href="./about.html" class="header__link">About Us</a></li>
                     </ul>
                 </nav>
-                <div><button type="button" data-modal-open class="header_contact">contact us</button></div>
+                <div><button type="button" data-modal-open class="header__contact">contact us</button></div>
             </div>
         </div>
     </header>
@@ -53,20 +55,20 @@
             </div>
     </footer>
     <!-- mobile-menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+    <div class="mobile-menu__container js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__toggle js-close-menu">
             <svg width="24" height="24">
                 <use href="../images/icons.svg#close-icon"></use>
             </svg>
         </button>
         <nav class="mobile-menu">
             <ul class="mobile-menu__list">
-                <li><a href="../../index.html" class="link">Home</a></li>
-                <li><a href="./streamers.html" class="link">Streamers</a></li>
-                <li><a href="./advertisers.html" class="link">Advertisers</a></li>
-                <li><a href="./about.html" class="link">About Us</a></li>
+                <li><a href="../../index.html" class="mobile-menu__link">Home</a></li>
+                <li><a href="./streamers.html" class="mobile-menu__link">Streamers</a></li>
+                <li><a href="./advertisers.html" class="mobile-menu__link">Advertisers</a></li>
+                <li><a href="./about.html" class="mobile-menu__link">About Us</a></li>
             </ul>
-            <button type="button" data-modal-open class="mobile-contact">contact us</button>
+            <button type="button" data-modal-open class="mobile-menu__contact">contact us</button>
         </nav>
     </div>
     <!-- modal-menu -->

@@ -72,17 +72,13 @@
 
     &__link--active {
         text-transform: uppercase;
-        
         position: relative;
-    
         padding-top: 33px;
         padding-bottom: 31px;
-    
+        font-size: 19px;
         font-weight: 500;
-    
         line-height: 1.14;
         letter-spacing: 0.02em;
-    
         color: var(--first-company-color);
 
         &::after {
