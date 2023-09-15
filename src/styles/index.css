@@ -109,7 +109,6 @@ ul {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--first-company-color);
-    /* Цвет ползунка */
 }
 
 .container {
@@ -139,30 +138,6 @@ ul {
 .logo {
     width: 110px;
     flex-grow: 2;
-}
-.menu-button {
-    display: none;
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    color: var(--text-color);
-}
-
-.burger-menu{
-    fill: #fff;
-}
-.menu-button:hover .burger-menu,
-.menu-button:focus .burger-menu{
-    fill: var(--first-company-color);
-}
-@media screen and (max-width: 767px) {
-    .menu-button {
-        display: flex;  
-        justify-content: flex-end;
-    }
 }
 
 /* header */
@@ -258,7 +233,7 @@ ul {
     height: 4px;
     content: '';
 }
-.header_contact {
+.header__contact {
     display: flex;
     text-transform: uppercase;
     border: 1px solid var(--second-company-color);
@@ -275,13 +250,13 @@ ul {
     cursor: pointer;
     border: 1px solid var(--first-company-color);
 }
-.header_contact:hover,
-.header_contact:focus,
-.header_contact:active {
+.header__contact:hover,
+.header__contact:focus,
+.header__contact:active {
     background-color: var(--second-company-color);
 }
 @media screen and (max-width: 768px) {
-    .header_contact {
+    .header__contact {
         display: none;
     }
 }
@@ -301,7 +276,7 @@ ul {
     }
 }
 /* mobile-menu */
-.menu-container {
+.mobile-menu__container {
     position: fixed;
     top: 0;
     left: 0;
@@ -315,11 +290,38 @@ ul {
     transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.mobile-menu__burger {
+    fill: #fff;
+}
+
+.mobile-menu__button {
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.mobile-menu__button:hover .mobile-menu__burger,
+.mobile-menu__button:focus .mobile-menu__burger {
+    fill: var(--first-company-color);
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-menu__button {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.mobile-menu__container.is-open {
     transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.mobile-menu__container .mobile-menu__toggle {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -335,9 +337,9 @@ ul {
     background-color: #fff;
 }
 
-.menu-container .menu-toggle:hover,
-.menu-container .menu-toggle:focus,
-.menu-container .menu-toggle:active {
+.mobile-menu__container .mobile-menu__toggle:hover,
+.mobile-menu__container .mobile-menu__toggle:focus,
+.mobile-menu__container .mobile-menu__toggle:active {
     background-color: var(--first-company-color);
 }
 
@@ -362,7 +364,7 @@ ul {
     margin: auto;
 }
 
-.mobile-menu__list .link {
+.mobile-menu__link {
     text-transform: uppercase;
     display: block;
     color: #fff;
@@ -377,14 +379,14 @@ ul {
     font-size: 18px;
 }
 
-.mobile-menu__list .link:hover,
-.mobile-menu__list .link:focus {
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
     color: var(--backound-color);
     fill: currentColor;
     background-color: var(--first-company-color);
 }
 
-.mobile-contact {
+.mobile-menu__contact {
     text-transform: uppercase;
     display: block;
     border: 1px solid var(--first-company-color);
@@ -399,9 +401,9 @@ ul {
     font-size: 18px;
 }
 
-.mobile-contact:hover,
-.mobile-contact:focus,
-.mobile-contact:active {
+.mobile-menu__contact:hover,
+.mobile-menu__contact:focus,
+.mobile-menu__contact:active {
     color: var(--backound-color);
     background-color: var(--first-company-color);
 }
@@ -475,9 +477,9 @@ ul {
 
     overflow-y: scroll;
 
-    @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) {
         padding: 93px 15px;
-    }
+    } */
 }
 
 /* footer */

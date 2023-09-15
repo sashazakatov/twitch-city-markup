@@ -1,0 +1,19 @@
+:root {
+    /* colors */
+    --first-company-color: #8dfe54;
+    --second-company-color: #4223ac;
+    --backound-color: #252525;
+    --text-color: #fff;
+    --input-border-color: #b9bdce;
+    --input-text-color: #b9bdce;
+
+    /* animation */
+    --animation-time: 250ms;
+
+    /* endpoints */
+    --moduil-size: 480px;
+    --tablet-size: 768px;
+    --desctop-size: 1200px;
+
+    --bezier-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

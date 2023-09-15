@@ -1,0 +1,20 @@
+.backdoor {
+    position: fixed;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: var(--bezier-function);
+
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    overflow-y: scroll;
+
+    @media screen and (max-width: 767px) {
+        padding: 93px 15px;
+    }
+}
